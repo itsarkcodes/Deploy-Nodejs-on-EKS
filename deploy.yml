@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: snaptrude-kube-deploy
+  labels:
+    name: snaptrude-kube-deploy
+    app: snaptrude-kube-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: snaptrude-kube-pod
+      app: snaptrude-kube-app
+  template:
+    metadata:
+      name: snaptrude-kube-pod
+      labels:
+        name: snaptrude-kube-pod
+        app: snaptrude-kube-app
+    spec:
+      containers:
+      - name: snaptrude-kube-container
+        image: 730335343869.dkr.ecr.us-east-1.amazonaws.com/testingapp:latest
+        ports:
+        - containerPort: 6041
+
