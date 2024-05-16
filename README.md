@@ -1,3 +1,5 @@
+![image](https://github.com/itsarkcodes/devops-assignment/assets/87442305/a12e00d1-c407-40ec-8e25-e8d36c77c770)
+
 # Step 1: Clone the GitHub Repository
 Clone the repository to your local machine:
 ``git clone <https://github.com/pranavtotla/assignment-boilerplate>``
